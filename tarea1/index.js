@@ -22,3 +22,4 @@ btnGenerarFormularios.onclick = function(){
     return false
 }
 
+const btnCalcular = document.querySelector('#btn-calcular')
