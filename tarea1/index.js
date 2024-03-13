@@ -10,7 +10,7 @@ btnGenerarFormularios.onclick = function(){
         formulario2.innerHTML += `
             <br>
             <label for="edad-miembro-${i}">Ingrese la edad del miembro ${i}</label>
-            <input type="number" min="0" id="edad-miembro-${i}"
+            <input type="number" required min="0" id="edad-miembro-${i}"
             <br>
         `
     }
