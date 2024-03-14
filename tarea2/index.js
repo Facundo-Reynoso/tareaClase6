@@ -12,7 +12,7 @@ btnAgregar.onclick = function(){
 
     let input = document.createElement('input')
     input.type = 'number'
-    input.id = `salario${cantidadDeMiembros}`
+    input.id = `salarioAnual${cantidadDeMiembros}`
 
     let formularioSalario = document.querySelector('#formulario-salario')
     formularioSalario.appendChild(label)
@@ -45,13 +45,12 @@ btnQuitar.onclick = function(){
 }
 
 btnCalcular.onclick = function(){
-    let salarios = []
+    let salariosAnuales = []
     for(i = 1; i <= cantidadDeMiembros; i++){
-        let salario = Number(document.querySelector(`#salario${i}`).value)
-        salarios.push(salario)
+        let salarioAnual = Number(document.querySelector(`#salarioAnual${i}`).value)
+        salariosAnuales.push(salarioAnual)
     }
     
-    
-    
+
     
 }
