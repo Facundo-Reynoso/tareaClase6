@@ -19,6 +19,7 @@ btnAgregar.onclick = function(){
     formularioSalario.appendChild(input)
     formularioSalario.appendChild(document.createElement('br'))
 
+    btnCalcular.className = ''
 }
 
 btnQuitar.onclick = function(){
