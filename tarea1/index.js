@@ -51,6 +51,13 @@ btnCalcular.onclick = function(){
         return promedio
     }
 
+    const mayorEdad = document.querySelector('#mayor-edad')
+    mayorEdad.textContent = `El miembro mayor de su familia tiene ${calcularMayor()} años`
+    const menorEdad = document.querySelector('#menor-edad')
+    menorEdad.textContent = `El miembro menor de su familia tiene ${calcularMenor()} año(s)`
+    const edadPromedio = document.querySelector('#edad-promedio')
+    edadPromedio.textContent = `La edad promedio de su familia es ${calcularPromedio()} años`
+
 
     return false
 }
