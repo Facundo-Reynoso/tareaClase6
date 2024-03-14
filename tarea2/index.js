@@ -18,3 +18,21 @@ btnAgregar.onclick = function(){
     formularioSalario.appendChild(document.createElement('br'))
 
 }
+
+btnQuitar.onclick = function(){
+    if(cantidadDeMiembros > 0){
+
+        let formularioSalario = document.querySelector('#formulario-salario')
+
+        //Borra el ultimo salto de linea
+        formularioSalario.removeChild(formularioSalario.lastElementChild)
+
+        //borra el ultimo input
+        formularioSalario.removeChild(formularioSalario.lastElementChild)
+
+        //borra el ultimo label
+        formularioSalario.removeChild(formularioSalario.lastElementChild)
+
+        cantidadDeMiembros--
+    }
+}
