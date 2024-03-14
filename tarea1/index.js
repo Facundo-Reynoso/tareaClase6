@@ -58,8 +58,10 @@ btnCalcular.onclick = function(){
     const edadPromedio = document.querySelector('#edad-promedio')
     edadPromedio.textContent = `La edad promedio de su familia es ${calcularPromedio()} años`
 
-    const btnReiniciar = document.querySelector('#reiniciar')
-    btnReiniciar.innerHTML = `<button id="btn-reiniciar">Reiniciar</button>`
+    document.querySelector('#reiniciar').innerHTML = `<button id="btn-reiniciar">Reiniciar</button>`
 
     return false
+
+}
+
 }
