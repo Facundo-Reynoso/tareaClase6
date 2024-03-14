@@ -51,6 +51,32 @@ btnCalcular.onclick = function(){
         salariosAnuales.push(salarioAnual)
     }
     
+    function calcularMayor(){
+        let salarioMayor = Math.max(...salariosAnuales)
+        return salarioMayor
+    }
+
+    function calcularMenor(){
+        let salarioMenor = Math.min(...salariosAnuales)
+        return salarioMenor 
+    }
+
+    function calcularSalarioAnualPromedio(){
+        let acumuladorSalariosAnuales = 0
+        for(i = 0; i < salariosAnuales.length; i++){
+            acumuladorSalariosAnuales += salariosAnuales[i]
+        }
+        return acumuladorSalariosAnuales / salariosAnuales.length
+    }
+
+    function calcularSalarioMensualPromedio(){
+        let acumuladorSalariosMensuales = 0
+        for(i = 0; i < salariosAnuales.length; i++){
+            let salarioMensual = salariosAnuales[i] / 12
+            acumuladorSalariosMensuales += salarioMensual
+        }
+        return acumuladorSalariosMensuales / salariosAnuales.length
+    }
 
     
 }
