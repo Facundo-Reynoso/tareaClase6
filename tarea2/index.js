@@ -37,5 +37,9 @@ btnQuitar.onclick = function(){
         formularioSalario.removeChild(formularioSalario.lastElementChild)
 
         cantidadDeMiembros--
+
+        if(cantidadDeMiembros === 0){
+            btnCalcular.className = 'oculto'
+        }
     }
 }
