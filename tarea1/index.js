@@ -66,4 +66,13 @@ btnCalcular.onclick = function(){
 
 const btnReiniciar = document.querySelector('#reiniciar')
 
+btnReiniciar.onclick = function(){
+    document.querySelector('#cantidad-de-miembros').value = ''
+    document.querySelector('#formulario-2').innerHTML = ``
+    document.querySelector('#btn-calcular').className = 'oculto'
+    document.querySelector('#mayor-edad').textContent = ''
+    document.querySelector('#menor-edad').textContent = ''
+    document.querySelector('#edad-promedio').textContent = ''
+    document.querySelector('#reiniciar').innerHTML = ``
+
 }
