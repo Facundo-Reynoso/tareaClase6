@@ -32,6 +32,25 @@ btnCalcular.onclick = function(){
         edades.push(edad)
     }
 
+    function calcularMayor(){
+        let edadMayor = Math.max(...edades)
+        return edadMayor
+    }
+
+    function calcularMenor(){
+        let edadMenor = Math.min(...edades)
+        return edadMenor
+    }
+
+    function calcularPromedio(){
+        let acumulador = 0
+        for(i = 0; i < edades.length; i++){
+            acumulador += edades[i]
+        }
+        let promedio = acumulador / edades.length
+        return promedio
+    }
+
 
     return false
 }
