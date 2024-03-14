@@ -78,5 +78,14 @@ btnCalcular.onclick = function(){
         return acumuladorSalariosMensuales / salariosAnuales.length
     }
 
+    const mayorSalario = document.querySelector('#salario-mayor')
+    mayorSalario.textContent = `El mayor salario anual de la familia es: $${calcularMayor()}`
+    const menorSalario = document.querySelector('#salario-menor')
+    menorSalario.textContent = `El menor salario anual de la familia es: $${calcularMenor()}`
+    const salarioAnualPromedio = document.querySelector('#salario-anual-promedio')
+    salarioAnualPromedio.textContent = `El salario anual promedio de la familia es: $${calcularSalarioAnualPromedio()}`
+    const salarioMensualPromedio = document.querySelector('#salario-mensual-promedio')
+    salarioMensualPromedio.textContent = `El salario mensual promedio de la familia es: $${calcularSalarioMensualPromedio()}`
+
     
 }
