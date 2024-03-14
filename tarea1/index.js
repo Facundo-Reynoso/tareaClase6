@@ -22,3 +22,16 @@ btnGenerarFormularios.onclick = function(){
 }
 
 const btnCalcular = document.querySelector('#btn-calcular')
+
+btnCalcular.onclick = function(){
+    let cantidadDeMiembros = Number(document.querySelector('#cantidad-de-miembros').value)
+    let edades = []
+
+    for(i = 1; i <= cantidadDeMiembros; i++){
+        let edad = Number(document.querySelector(`#edad-miembro-${i}`).value)
+        edades.push(edad)
+    }
+
+
+    return false
+}
