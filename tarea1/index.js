@@ -64,4 +64,6 @@ btnCalcular.onclick = function(){
 
 }
 
+const btnReiniciar = document.querySelector('#reiniciar')
+
 }
