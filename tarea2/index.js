@@ -2,6 +2,8 @@ const btnAgregar = document.querySelector('#btn-agregar')
 const btnQuitar = document.querySelector('#btn-quitar')
 let cantidadDeMiembros = 0
 
+const btnCalcular = document.querySelector('#btn-calcular')
+
 btnAgregar.onclick = function(){
     cantidadDeMiembros++
 
