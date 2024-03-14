@@ -15,10 +15,9 @@ btnGenerarFormularios.onclick = function(){
         `
     }
 
-    formulario2.innerHTML += `
-        <br>
-        <button id="btn-calcular">Calcular</button>
-    `
+    
+    document.querySelector('#btn-calcular').className = ''
+
     return false
 }
 
