@@ -43,3 +43,15 @@ btnQuitar.onclick = function(){
         }
     }
 }
+
+btnCalcular.onclick = function(){
+    let salarios = []
+    for(i = 1; i <= cantidadDeMiembros; i++){
+        let salario = Number(document.querySelector(`#salario${i}`).value)
+        salarios.push(salario)
+    }
+    
+    
+    
+    
+}
