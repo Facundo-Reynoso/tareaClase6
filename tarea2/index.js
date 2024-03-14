@@ -12,5 +12,9 @@ btnAgregar.onclick = function(){
     input.type = 'number'
     input.class = 'salario'
 
+    let formularioSalario = document.querySelector('#formulario-salario')
+    formularioSalario.appendChild(label)
+    formularioSalario.appendChild(input)
+    formularioSalario.appendChild(document.createElement('br'))
 
 }
