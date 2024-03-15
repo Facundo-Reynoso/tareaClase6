@@ -47,8 +47,10 @@ btnQuitar.onclick = function(){
 btnCalcular.onclick = function(){
     let salariosAnuales = []
     for(i = 1; i <= cantidadDeMiembros; i++){
+        if(Number(document.querySelector(`#salarioAnual${i}`).value) != ''){ //PUNTO BONUS
         let salarioAnual = Number(document.querySelector(`#salarioAnual${i}`).value)
         salariosAnuales.push(salarioAnual)
+        }
     }
     
     function calcularMayor(){
